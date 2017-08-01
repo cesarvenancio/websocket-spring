@@ -18,20 +18,11 @@
         <div class="col-md-6">
             <form class="form-inline">
                 <div class="form-group">
-                    <label for="connect">WebSocket connection:</label>
-                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
-                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
+                    <label for="connect">Chat:</label>
+                    <button id="connect" class="btn btn-default" type="submit">Active</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Deactive
                     </button>
                 </div>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <form class="form-inline">
-                <div class="form-group">
-                    <label for="name">What is your name?</label>
-                    <input type="text" id="name" class="form-control" placeholder="Your name here...">
-                </div>
-                <button id="send" class="btn btn-default" type="submit">Send</button>
             </form>
         </div>
     </div>
@@ -40,7 +31,7 @@
             <table id="conversation" class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Greetings</th>
+                    <th>Chat Test</th>
                 </tr>
                 </thead>
                 <tbody id="greetings">
@@ -48,6 +39,15 @@
             </table>
         </div>
     </div>
+    <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="name">Message</label>
+						<input id="message" name="message" size="70" autocomplete="off" placeholder="Type your message here" />                    
+                </div>
+                <input id="send" class="btn btn-default" type="submit" value="Send" />
+            </form>
+        </div>
     </form>
 </div>
 </body>

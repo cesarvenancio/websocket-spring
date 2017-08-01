@@ -1,4 +1,4 @@
-package hello;
+package com.example.websocket.vo;
 
 public class Greeting {
 
